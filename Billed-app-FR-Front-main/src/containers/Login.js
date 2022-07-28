@@ -46,6 +46,12 @@ export default class Login {
       });
   };
 
+  /**
+   * FIX BUG 2
+   * correction employee-email-input par admin-email-input
+   * correction employee-password-input par admin-password-input
+   */
+
   handleSubmitAdmin = (e) => {
     e.preventDefault();
     const user = {
