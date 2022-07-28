@@ -15,7 +15,7 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import { jest } from '@jest/globals';
 
-jest.mock('../app/Store', () => mockStore); // INDISPENSABLE au fonctionnement des tests, sinon chrono non defini.
+jest.mock('../app/Store', () => mockStore); // INDISPENSABLE au fonctionnement des tests
 
 describe('Given I am connected as an employee', () => {
   describe('When I am on Bills Page', () => {
