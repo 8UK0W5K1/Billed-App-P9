@@ -22,8 +22,8 @@ const row = (bill) => {
 const rows = (data) => {
   return data && data.length
     ? data
-        .sort(antiChrono)
-        .data.map((bill) => row(bill))
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map((bill) => row(bill))
         .join('')
     : '';
 };
